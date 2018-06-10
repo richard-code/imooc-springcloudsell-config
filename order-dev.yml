@@ -25,6 +25,6 @@ eureka:
   instance:
     prefer-ip-address: true
 env:
-  jdk: 1.8.111
-  system: windows10
+  jdk: 1.8
+  system: win10
   profile: dev
