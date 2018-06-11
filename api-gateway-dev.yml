@@ -10,6 +10,6 @@ zuul:
   sensitive-headers:
   routes:
     product:
-      path: /productSys/**
+      path: /productSys1/**
       serviceId: product
 
