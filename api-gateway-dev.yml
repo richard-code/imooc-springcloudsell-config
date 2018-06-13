@@ -12,4 +12,7 @@ zuul:
     product:
       path: /productSys/**
       serviceId: product
+    user: 
+      path: /userSys/**
+      serviceId: user
 
