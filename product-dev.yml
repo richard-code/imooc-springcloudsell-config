@@ -16,5 +16,3 @@ spring:
     password: 123456
 server:
   port: 9001
-  instance:
-    prefer-ip-address: true
