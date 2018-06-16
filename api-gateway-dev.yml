@@ -15,4 +15,6 @@ zuul:
     user: 
       path: /userSys/**
       serviceId: user
+auth:
+  allowdURIs: /userSys/login/.* 
 
