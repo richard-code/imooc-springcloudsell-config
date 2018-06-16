@@ -17,6 +17,6 @@ zuul:
       serviceId: user
 auth:
   allowedURIs: /userSys/login/.*
-  allowedBuyers: /order/create
-  allowedSellers: /order/finish
+  allowedBuyers: /orderSys/order/create
+  allowedSellers: /orderSys/order/finish
 
