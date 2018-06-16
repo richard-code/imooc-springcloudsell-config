@@ -19,7 +19,7 @@ zuul:
       path: /orderSys/**
       serviceId: order
 auth:
-  allowedURIs: /userSys/login/.*
-  allowedBuyers: /orderSys/order/create
-  allowedSellers: /orderSys/order/finish
+  allowedAllURIs: /userSys/login/.*
+  allowedBuyerURIs: /orderSys/order/create
+  allowedSellerURIs: /orderSys/order/finish
 
