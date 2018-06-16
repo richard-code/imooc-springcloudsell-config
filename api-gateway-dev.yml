@@ -16,5 +16,7 @@ zuul:
       path: /userSys/**
       serviceId: user
 auth:
-  allowedURIs: /userSys/login/.* 
+  allowedURIs: /userSys/login/.*
+  allowedBuyers: /order/create
+  allowedSellers: /order/finish
 
