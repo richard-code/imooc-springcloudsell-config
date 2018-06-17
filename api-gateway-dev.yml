@@ -19,6 +19,13 @@ zuul:
     order:
       path: /orderSys/**
       serviceId: order
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 3000
 auth:
   allowedAllURIs: /userSys/login/.*
   allowedBuyerURIs: /orderSys/order/create
