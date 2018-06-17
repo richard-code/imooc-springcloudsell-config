@@ -18,7 +18,7 @@ spring:
     base-url: http://192.168.126.19:9411
   sleuth:
     sampler:
-      probability: 1
+      probability: 1.0
 logging:
   level:
     org.springframework.cloud.openfeign: debug
