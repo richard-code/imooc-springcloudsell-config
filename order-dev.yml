@@ -20,3 +20,10 @@ env:
   jdk: 1.8
   system: windows10
   profile: dev
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 3000
