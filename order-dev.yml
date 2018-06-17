@@ -17,6 +17,7 @@ spring:
   zipkin:
     base-url: http://192.168.126.19:9411
   sleuth:
+    enabled: true
     sampler:
       probability: 1
 logging:
