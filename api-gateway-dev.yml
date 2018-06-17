@@ -19,13 +19,16 @@ zuul:
     order:
       path: /orderSys/**
       serviceId: order
+ribbon:
+  ConnectTimeout: 5000
+  ReadTimeout: 5000
 hystrix:
   command:
     default:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 3000
+            timeoutInMilliseconds: 10000
 auth:
   allowedAllURIs: /userSys/login/.*
   allowedBuyerURIs: /orderSys/order/create
