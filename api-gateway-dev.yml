@@ -4,6 +4,11 @@ spring:
     port: 5672
     username: test
     password: 123456
+  zipkin:
+    base-url: http://192.168.126.19:9411
+  sleuth:
+    sampler:
+      probability: 1
 server:
   port: 9000
 zuul:
@@ -29,6 +34,8 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds: 20000
+logging:
+  level: debug
 auth:
   allowedAllURIs: /userSys/login/.*
   allowedBuyerURIs: /orderSys/order/create
