@@ -35,7 +35,8 @@ hystrix:
           thread:
             timeoutInMilliseconds: 20000
 logging:
-  level: debug
+  level:
+    org.springframework.cloud.openfeign: debug
 auth:
   allowedAllURIs: /userSys/login/.*
   allowedBuyerURIs: /orderSys/order/create
