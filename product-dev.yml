@@ -15,7 +15,7 @@ spring:
     username: test
     password: 123456
   zipkin:
-    base-url: http://192.168.126.19:9411
+    base-url: http://192.168.126.19:9411/
   sleuth:
     sampler:
       probability: 1.0
