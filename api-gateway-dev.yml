@@ -7,7 +7,7 @@ spring:
 server:
   port: 9000
 zuul:
-  ignored-services: *
+  ignored-services: "*"
   sensitive-headers:
   routes:
     product:
