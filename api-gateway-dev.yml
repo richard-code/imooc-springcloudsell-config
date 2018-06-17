@@ -9,6 +9,9 @@ spring:
   sleuth:
     sampler:
       probability: 1
+logging:
+  level:
+    org.springframework.cloud.openfeign: debug
 server:
   port: 9000
 zuul:
@@ -34,9 +37,6 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds: 20000
-logging:
-  level:
-    org.springframework.cloud.openfeign: debug
 auth:
   allowedAllURIs: /userSys/login/.*
   allowedBuyerURIs: /orderSys/order/create
