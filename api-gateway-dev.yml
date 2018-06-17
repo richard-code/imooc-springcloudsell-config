@@ -28,7 +28,7 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 10000
+            timeoutInMilliseconds: 20000
 auth:
   allowedAllURIs: /userSys/login/.*
   allowedBuyerURIs: /orderSys/order/create
